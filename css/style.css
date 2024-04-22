@@ -38,12 +38,14 @@ aside {
     background-color: #000000;
     font-size: .9rem;
     font-weight: 700;
+    position: fixed;
 }
 
 main {
     background-color: #141922;
     height: calc(100vh - 100px);
     overflow-y: scroll;
+    margin-left: 250px;
 }
 
 nav.play-bar {
@@ -52,7 +54,7 @@ nav.play-bar {
     background-color: #282828;
 }
 
-/* Aside Nav Style */
+/* Aside Style */
 
 
 aside {
@@ -69,7 +71,7 @@ aside nav {
 
 aside nav img.logo {
     width: 150px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 aside nav img {
@@ -140,3 +142,6 @@ aside hr {
 aside span {
     color: white;
 }
+
+/* Main Content Style */
+
