@@ -6,3 +6,20 @@
 
 /* Stile Generale */
 
+aside {
+    width: 250px;
+    height: calc(100vh - 100px);
+    background-color: #000000;
+}
+
+main {
+    background-color: #141922;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+}
+
+nav.play-bar {
+    height: 100px;
+    width: 100%;
+    background-color: #282828;
+}
