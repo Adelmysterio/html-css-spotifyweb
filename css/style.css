@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 /* Utilities */
 
 .flex {
@@ -19,6 +18,14 @@
 .centered {
     align-items: center;
     justify-content: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.margin-right {
+    margin-right: 1rem;
 }
 
 /* Stile Generale */
@@ -54,15 +61,23 @@ nav.play-bar {
     background-color: #282828;
 }
 
+.aside-container {
+    padding: 1rem 1.5rem 0 1.5rem;
+}
+
+.container {
+    margin: 0 1rem;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
 /* Aside Style */
 
 
 aside {
     color: #717171;
-}
-
-.aside-container {
-    padding: 1rem 1.5rem 0 1.5rem;
 }
 
 aside nav {
@@ -87,6 +102,7 @@ aside h2 {
     text-transform: uppercase;
     font-size: .9rem;
     margin-bottom: 1rem;
+    color: white;
 }
 
 aside button {
@@ -139,9 +155,47 @@ aside hr {
     border-bottom: 1px solid #717171;
 }
 
-aside span {
+.account span {
     color: white;
 }
 
 /* Main Content Style */
 
+.adv {
+    height: 93px;
+    background-color: #080b12;
+    align-items: center;
+    justify-content: right;
+}
+
+.adv button {
+    text-transform: uppercase;
+}
+
+main nav li {
+    text-transform: uppercase;
+    margin: 1rem;
+    font-size: .8rem;
+    font-weight: bold;
+    color: #717171;
+}
+
+main article {
+    width: calc((100% / 6) - 1rem);
+    text-align: center;
+    margin: 2rem 0;
+}
+
+main article>img {
+    width: 100%;
+}
+
+main article>h3{
+margin: .5rem 0;
+}
+
+main article>p {
+    font-size: .8rem;
+    font-weight: bold;
+    color: #717171;
+}
