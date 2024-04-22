@@ -95,7 +95,7 @@
             <!-- Recently Played -->
             <section>
                 <h2>Recently Played</h2>
-                <section class="flex space-between">
+                <section class="space-between">
                     <article>
                         <img src="img/metal_lifting.jpg" alt="Metal playlist">
                         <h3>Heavy Metal</h3>
@@ -161,18 +161,23 @@
         </div>
 
     </main>
-
+    <!---------------->
+    <!-- Footer -->
     <nav class="footer-nav-bar flex">
-        <div class="flex centered">
-            <ul class="flex centered">
-                <li><img src="img/sinister.jpeg" alt="Sinister"></li>
-                <li class="big-margin-right">
-                    <h3>Sinister</h3>
+        <div class="flex centered space-between">
+            <article class="flex align-center">
+                <figure class="flex centered">
+                    <img src="img/sinister.jpeg" alt="Sinister">
+                </figure>
+                <section>
+                    <h3 class="big-margin-right">Sinister</h3>
                     <p>Brano Nome</p>
-                </li>
-                <li><i class="fa-regular fa-heart margin-right"></i></li>
-                <li><i class="fa-regular fa-folder"></i></li>
-            </ul>
+                </section>
+                <div>
+                    <i class="fa-regular fa-heart margin-right"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+            </article>
 
             <div class="music-player flex column">
                 <ul class="flex centered">
@@ -193,6 +198,28 @@
                     </li>
                 </ul>
 
+                <div class="play-bar flex centered">
+                    <span>0:25</span>
+                    <div>
+                        <div>
+
+                        </div>
+                    </div>
+                    <span>4:35</span>
+                </div>
+            </div>
+
+            <div class="option flex align-center">
+                <ul class="flex">
+                    <li><i class="fa-solid fa-list-ul"></i></li>
+                    <li><i class="fa-solid fa-desktop"></i></li>
+                    <li class="flex centered"><i class="fa-solid fa-volume-high"></i>
+                        <div class="play-bar">
+                            <div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>

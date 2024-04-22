@@ -24,6 +24,10 @@
     flex-direction: column;
 }
 
+.space-between {
+    justify-content: space-between;
+}
+
 .margin-right {
     margin-right: 1rem;
 }
@@ -31,6 +35,7 @@
 .big-margin-right {
     margin-right: 3rem;
 }
+
 
 /* Stile Generale */
 
@@ -70,11 +75,11 @@ nav.footer-nav-bar {
 }
 
 .container {
-    margin: 0 2rem 0 1rem; 
+    margin: 0 2rem 0 1rem;
 }
 
-.space-between {
-    justify-content: space-between;
+.footer-nav-bar>div {
+    margin: 0 1rem;
 }
 
 /* Aside Style */
@@ -174,6 +179,14 @@ aside hr {
 
 .adv button {
     text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    border: 2px solid white;
+    margin-right: 1rem;
 }
 
 main nav li {
@@ -194,8 +207,8 @@ main article>img {
     width: 100%;
 }
 
-main article>h3{
-margin: .5rem 0;
+main article>h3 {
+    margin: .5rem 0;
 }
 
 main article>p {
@@ -206,20 +219,24 @@ main article>p {
 
 /* Footer Style */
 
-.footer-nav-bar {
-    position: fixed;
-}
-
 .footer-nav-bar>div {
-    margin: 0 1rem;
+    width: 100%;
 }
 
-.footer-nav-bar img{
-    width: 3rem;
-    margin-right: 1rem;
+.footer-nav-bar>div>* {
+    width: calc(100% / 3);
 }
 
-.footer-nav-bar h3{
+.footer-nav-bar figure {
+width: 8%;
+margin-right: 1rem;
+}
+
+.footer-nav-bar img {
+    width: 100%;
+}
+
+.footer-nav-bar h3 {
     font-size: 0.8rem;
 }
 
@@ -229,14 +246,71 @@ main article>p {
     color: #717171;
 }
 
-.footer-nav-bar>div>ul:first-child i {
+.footer-nav-bar article i {
     color: #717171;
+    font-size: .8rem;
 }
 
-.music-player li {
-    margin: 0 1rem;
+.music-player {
+    width: 50%;
+justify-self: center;
+}
+.music-player ul{
+    margin-bottom: .6rem;
+}
+.footer-nav-bar li {
+    margin: 0 .8rem;
 }
 
 .music-player li:nth-child(3) {
     font-size: 2rem;
+}
+
+.music-player .play-bar>span {
+    font-size: .7rem;
+    font-weight: bold;
+    color: #717171;
+}
+.music-player .play-bar>div {
+    width: 20vw;
+    height: .2rem;
+    background-color: #717171;
+    border-radius: 15px;
+    margin: 0 2rem;
+}
+
+.music-player .play-bar>div>div {
+    width: 20%;
+    height: .2rem;
+    background-color: #d2d2d2;
+    border-radius: 15px;
+}
+
+.option {
+    justify-content: flex-end;
+}
+
+.option i {
+    font-size: .7rem;
+}
+
+.option .play-bar {
+    width: 8vw;
+    height: .2rem;
+    background-color: #717171;
+    border-radius: 15px;
+    margin: 0 1rem;
+}
+
+.option .play-bar>div {
+    width: 20%;
+    height: .2rem;
+    background-color: #d2d2d2;
+    border-radius: 15px;
+}
+
+/* Media query */
+
+@media screen and (max-width: 768px) {
+    
 }
