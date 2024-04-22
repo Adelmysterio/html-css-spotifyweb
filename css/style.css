@@ -4,12 +4,40 @@
     box-sizing: border-box;
 }
 
+
+/* Utilities */
+
+.flex {
+    display: flex;
+}
+
+
+.align-center {
+    align-items: center;
+}
+
+.centered {
+    align-items: center;
+    justify-content: center;
+}
+
 /* Stile Generale */
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
 
 aside {
     width: 250px;
     height: calc(100vh - 100px);
     background-color: #000000;
+    font-size: .9rem;
+    font-weight: 700;
 }
 
 main {
@@ -22,4 +50,93 @@ nav.play-bar {
     height: 100px;
     width: 100%;
     background-color: #282828;
+}
+
+/* Aside Nav Style */
+
+
+aside {
+    color: #717171;
+}
+
+.aside-container {
+    padding: 1rem 1.5rem 0 1.5rem;
+}
+
+aside nav {
+    margin-bottom: 2rem;
+}
+
+aside nav img.logo {
+    width: 150px;
+    margin-bottom: 2rem;
+}
+
+aside nav img {
+    width: 1.8rem;
+    margin-right: .5rem;
+}
+
+aside ul>li {
+    margin-bottom: .6rem;
+}
+
+aside h2 {
+    text-transform: uppercase;
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+
+aside button {
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    color: #717171;
+    border: none;
+    font-size: .9rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+aside button>div {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #d2d2d2;
+    margin-right: .5rem;
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.playlist ul {
+    margin-bottom: 13.5rem;
+}
+
+.playlist li {
+    margin-bottom: 1rem;
+}
+
+aside>div>div>p>i {
+    margin-right: .6rem;
+}
+
+aside figure {
+    display: inline-block;
+    width: 1.5rem;
+    line-height: 1;
+    margin-right: .5rem;
+}
+
+aside figure>img {
+    background-color: #717171;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+aside hr {
+    margin: .8rem 0;
+    border-bottom: 1px solid #717171;
+}
+
+aside span {
+    color: white;
 }
