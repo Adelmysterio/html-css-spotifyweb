@@ -22,20 +22,21 @@
 <body>
 
     <aside>
-        <div class="aside-container">
+        <div class="aside-container flex column">
             <nav>
                 <ul>
                     <li>
                         <img class="logo" src="img/logo.svg" alt="Logo Spotify">
+                        <img class="small-logo" src="img/logo-small.svg" alt="small logo">
                     </li>
                     <li class="flex align-center">
                         <img src="img/home.svg" alt="Home icon"> <span>Home</span>
                     </li>
                     <li class="flex align-center">
-                        <img src="img/search.svg" alt="Home icon"> Cerca
+                        <img src="img/search.svg" alt="Home icon"> <span>Cerca</span>
                     </li>
                     <li class="flex align-center">
-                        <img src="img/libreria.svg" alt="Home icon"> La tua libreria
+                        <img src="img/libreria.svg" alt="Home icon"> <span>La tua libreria</span>
                     </li>
 
                 </ul>
@@ -60,7 +61,7 @@
             </section>
 
             <div class="info">
-                <p><i class="fa-regular fa-circle-down"></i> Installa app</p>
+                <p class="flex"><i class="fa-regular fa-circle-down"></i><span>Installa app</span></p>
                 <hr>
                 <div class="account flex align-center">
                     <figure>
@@ -95,35 +96,36 @@
             <!-- Recently Played -->
             <section>
                 <h2>Recently Played</h2>
-                <section class="recently-played flex space-between">
+                <section class="recently-played flex space-around">
                     <article>
                         <img src="img/metal_lifting.jpg" alt="Metal playlist">
                         <h3>Heavy Metal</h3>
                         <p>Subtitle</p>
                     </article>
                     <article>
-                        <img src="img/metal_lifting.jpg" alt="Metal playlist">
-                        <h3>Heavy Metal</h3>
+                        <img src="img/stranger.jpeg" alt="stranger playlist">
+                        <h3>Stranger Things, Vol. 1 <span>(a Netflix Original Series Soundtrack)</span></h3>
+                        <p>Kyle Dixon & Michael Stein</p>
+                    </article>
+                    <article>
+                        <img src="img/aquietplace.jpeg" alt="Metal playlist">
+                        <h3>A quiet place</h3>
                         <p>Subtitle</p>
                     </article>
                     <article>
-                        <img src="img/metal_lifting.jpg" alt="Metal playlist">
-                        <h3>Heavy Metal</h3>
+                        <img src="img/split.jpeg" alt="split">
+                        <h3>Split</h3>
                         <p>Subtitle</p>
                     </article>
                     <article>
-                        <img src="img/metal_lifting.jpg" alt="Metal playlist">
-                        <h3>Heavy Metal</h3>
+                        <img src="img/cure.jpeg" alt="Cure">
+                        <h3>A cure for wellness</h3>
                         <p>Subtitle</p>
                     </article>
                     <article>
-                        <img src="img/metal_lifting.jpg" alt="Metal playlist">
-                        <h3>Heavy Metal</h3>
-                        <p>Subtitle</p>
-                    </article>
-                    <article>
-                        <img src="img/metal_lifting.jpg" alt="Metal playlist">
-                        <h3>Heavy Metal</h3>
+                        <img src="img/sinister.jpeg" alt="Sinister
+                        ">
+                        <h3>Sinister</h3>
                         <p>Subtitle</p>
                     </article>
                 </section>
@@ -132,13 +134,13 @@
             <!-- Created for you -->
             <section>
                 <h2>Creato per John Doe</h2>
-                <section class="flex">
-                    <article class="margin-right">
-                        <img src="img/metal_lifting.jpg" alt="Metal playlist">
-                        <h3>Heavy Metal</h3>
+                <section class="flex for-you">
+                    <article>
+                        <img src="img/radar.jpeg" alt="Radar release">
+                        <h3>Release Radar</h3>
                     </article>
                     <article>
-                        <img src="img/metal_lifting.jpg" alt="Metal playlist">
+                        <img src="img/mixdaily.jpeg" alt="MIX">
                         <h3>Heavy Metal</h3>
                     </article>
                 </section>
@@ -147,14 +149,18 @@
             <!-- Popular Artist -->
             <section>
                 <h2>Artisti popolari</h2>
-                <section class="flex">
-                    <article class="margin-right">
-                        <img src="img/metal_lifting.jpg" alt="Metal playlist">
-                        <h3>Heavy Metal</h3>
+                <section class="flex popular">
+                    <article>
+                        <figure class="circle">
+                            <img src="img/youg.jpeg" alt="Lana del rey">
+                        </figure>
+                        <h3>Lana del Rey</h3>
                     </article>
                     <article>
-                        <img src="img/metal_lifting.jpg" alt="Metal playlist">
-                        <h3>Heavy Metal</h3>
+                        <figure class="circle">
+                            <img src="img/einaudi.jpeg" alt="Einaudi">
+                        </figure>
+                        <h3>Ludovico Einaudi</h3>
                     </article>
                 </section>
             </section>
