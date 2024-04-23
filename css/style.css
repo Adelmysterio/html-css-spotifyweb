@@ -82,10 +82,12 @@ footer {
     font-size: .8rem;
     font-weight: 700;
     position: fixed;
+    z-index: 2;
 }
 
 .container {
     margin: 0 2rem 0 1rem;
+    padding-top: 90px;
 }
 
 .footer-nav-bar {
@@ -96,15 +98,38 @@ footer {
     display: none;
 }
 
+.tag {
+    background-color: #a8f82e;
+    height: .1rem;
+    width: 2rem;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.rotation {
+    transform: rotate(90deg);
+}
+
+.position-aside {
+    left: -14px;
+}
+
+.position-main {
+left: 22px;
+top: 17px;
+}
+
 /* Aside Style */
 
 
 aside {
     color: #717171;
+    
 }
 
 aside nav {
     margin-bottom: 2rem;
+
 }
 
 aside nav img.logo {
@@ -191,6 +216,11 @@ aside>div>div>p>i {
     background-color: #080b12;
     align-items: center;
     justify-content: right;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
 }
 
 .adv button {
@@ -214,9 +244,20 @@ main nav li {
     color: #717171;
 }
 
+main nav li:first-child {
+    position: relative;
+}
+
 main h2 {
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+main div.container>section>p {
+    font-size: .8rem;
+    font-weight: bold;
+    color: #717171;
+    margin-bottom: 1.5rem;
 }
 
 main article {
@@ -340,6 +381,7 @@ footer i {
     border-radius: 15px;
 }
 
+/* <!----------------> */
 /* Media queries */
 
 @media screen and (max-width: 992px) {
@@ -383,6 +425,10 @@ footer i {
     main article>p {
         font-size: .6rem;
     }
+    
+    .margin-right {
+        margin-right: 0;
+    }
 }
 
 
@@ -425,7 +471,6 @@ footer i {
         padding: 1rem 1rem 0 1rem;
         width: 3rem;
         height: calc(100vh - 90px);
-
     }
 
     .info {
@@ -434,7 +479,7 @@ footer i {
         align-items: center;
     }
 
-    .info p{
+    .info p {
         margin-bottom: .5rem
     }
 

@@ -31,6 +31,7 @@
                     </li>
                     <li class="flex align-center">
                         <img src="img/home.svg" alt="Home icon"> <span>Home</span>
+                        <div class="tag rotation position-aside"></div>
                     </li>
                     <li class="flex align-center">
                         <img src="img/search.svg" alt="Home icon"> <span>Cerca</span>
@@ -84,18 +85,20 @@
             </button>
         </section>
 
-        <nav>
-            <ul class="flex centered">
-                <li>in evidenza</li>
-                <li>podcast</li>
-                <li>classifiche</li>
-                <li>generi e mood</li>
-                <li>nuove uscite</li>
-                <li>in evidenza</li>
-            </ul>
-        </nav>
-
         <div class="container">
+            <nav>
+                <ul class="flex centered">
+                    <li>in evidenza
+                        <div class="tag position-main"></div>
+                    </li>
+                    <li>podcast</li>
+                    <li>classifiche</li>
+                    <li>generi e mood</li>
+                    <li>nuove uscite</li>
+                    <li>in evidenza</li>
+                </ul>
+            </nav>
+
             <!-- Recently Played -->
             <section>
                 <h2>Recently Played</h2>
@@ -137,8 +140,9 @@
             <!-- Created for you -->
             <section>
                 <h2>Creato per John Doe</h2>
+                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                 <section class="flex for-you">
-                    <article>
+                    <article class="margin-right">
                         <img src="img/radar.jpeg" alt="Radar release">
                         <h3>Release Radar</h3>
                     </article>
@@ -152,8 +156,9 @@
             <!-- Popular Artist -->
             <section>
                 <h2>Artisti popolari</h2>
+                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                 <section class="flex popular">
-                    <article>
+                    <article class="margin-right">
                         <figure class="circle">
                             <img src="img/youg.jpeg" alt="Lana del rey">
                         </figure>
@@ -171,7 +176,7 @@
 
     </main>
     <!---------------->
-    <!-- Footer -->
+    <!-- Header on Footer-->
     <footer class="flex align-center">
         <nav class="footer-nav-bar flex align-center space-between">
 
@@ -231,13 +236,13 @@
                     </li>
                     <li>
                         <div class="volume flex centered">
-                        <div>
                             <div>
-    
+                                <div>
+
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
+                    </li>
                 </ul>
             </div>
         </nav>
