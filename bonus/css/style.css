@@ -4,53 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Stile Generale */
-
-body {
-    font-family: "Montserrat", sans-serif;
-    color: #a7a7a7;
-    font-weight: 600;
-    background-color: black;
-    font-size: .9rem;
-}
-
-.huge-container {
-    margin: 1rem;
-    margin-bottom: 0;
-}
-
-header {
-    width: 280px;
-    height: 112px;
-    background-color: #121212;
-    border-radius: 15px;
-}
-
-aside {
-    width: 280px;
-    background-color: #121212;
-    border-radius: 15px;
-}
-
-.col>aside {
-    height: calc(100vh - 1rem - 120px - 112px);
-}
-
-main {
-    width: calc(100vw - 560px - 1rem);
-    background-color: #121212;
-    border-radius: 15px;
-    overflow-y: scroll;
-}
-
-footer {
-
-    width: 100%;
-    height: 100px;
-    background-color: greenyellow;
-
-}
-
 /* Utilities */
 
 
@@ -75,12 +28,87 @@ footer {
     align-items: center
 }
 
+.align-end {
+    align-items: flex-end;
+}
+
 .gap {
     gap: 1rem;
 }
 
 .wrap {
     flex-wrap: wrap;
+}
+
+.rotate {
+    transform: rotate(45deg);
+}
+
+.green {
+    color: #1ed760;
+}
+
+/* <///////////////////////> */
+/* Stile Generale */
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #a7a7a7;
+    font-weight: 600;
+    background-color: black;
+    font-size: .9rem;
+}
+
+.huge-container {
+    margin: .5rem;
+    gap: .5rem;
+}
+
+header {
+    width: 280px;
+    height: 112px;
+    background-color: #121212;
+    border-radius: 15px;
+}
+
+aside {
+    width: 280px;
+    background-color: #121212;
+    border-radius: 15px;
+    overflow-y: scroll;
+    position: relative;
+    z-index: 1;
+    height: calc(100vh - 105px);
+}
+
+.col {
+    gap: .5rem;
+}
+
+.col>aside {
+    padding: 1rem;
+    height: calc(100vh - 1rem - 100px - 110px)
+}
+
+
+main {
+    width: calc(100vw - 560px - 1rem);
+    background-color: #121212;
+    border-radius: 15px;
+    overflow-y: scroll;
+    height: calc(100vh - 105px);
+}
+
+footer {
+    width: 100%;
+    height: 90px;
+    background-color: greenyellow;
+    position: relative;
+    z-index: 4;
+}
+
+ul {
+    list-style-type: none;
 }
 
 /* <///////////////////////> */
@@ -101,14 +129,14 @@ header li img {
 /* <///////////////////////> */
 /* Aside LEFT Style */
 
-.col>aside {
-    padding: 1rem;
-}
-
 .library-bar {
     position: fixed;
-    left: 2rem;
-    right: calc(100% - 280px);
+    top: 128px;
+    left: 1.3rem;
+    right: calc(100% - 275px);
+    z-index: 1;
+    background-color: #121212;
+    padding-top: 1rem;
 }
 
 .library-bar>div {
@@ -122,11 +150,118 @@ header li img {
 
 .library-area {
     padding-top: 5rem;
+    margin-bottom: 1rem;
 }
 
-.library-area img{
+.library-area img {
     height: 1.7rem;
 }
 
+.library-res figure {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.library-res figure>img {
+    width: 100%;
+    height: 100%;
+}
+
+.library-res h3 {
+    font-size: .9rem;
+    color: white;
+    margin-bottom: .2rem;
+}
+
+.library-res p {
+    font-size: .8rem;
+}
+
+.library-res li {
+    margin-bottom: 1rem;
+}
+
+/* <///////////////////////> */
+/* Main Style */
+
+.album-play {
+background-image: linear-gradient(to bottom, rgba(90, 90, 90, 0.37), rgba(20, 20, 20, 0.795));
+padding-left: 2rem;
+padding-bottom: 1rem;
+}
+
+main .button-area {
+    align-self: flex-end;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+}
+.album-cover {
+width: 15rem;
+aspect-ratio: 1/1;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.album-cover>img {
+width: 100%;
+}
+
+.title h3{ 
+    color: white;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.artist>figure {
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.artist>figure>img {
+    width: 100%;
+}
+
+.artist p {
+    font-size: .8rem;
+}
+
+main>nav {
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+main>nav li {
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+.fa-circle-play {
+    font-size: 4rem;
+}
+
+main>nav li:last-child {
+    font-size: .9rem;
+    margin-left: auto;
+}
+
+.title-list {
+    padding-top: 2.5rem;
+    padding-left: 3.5rem;
+}
+
+.title-list>section,
+.title-list>section>h4 {
+font-weight: 400;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
 
 
