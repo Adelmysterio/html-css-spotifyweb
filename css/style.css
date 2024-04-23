@@ -115,8 +115,8 @@ footer {
 }
 
 .position-main {
-left: 22px;
-top: 17px;
+    left: 22px;
+    top: 17px;
 }
 
 /* Aside Style */
@@ -124,7 +124,7 @@ top: 17px;
 
 aside {
     color: #717171;
-    
+
 }
 
 aside nav {
@@ -156,12 +156,15 @@ aside h2 {
 aside button {
     font-family: "Montserrat", sans-serif;
     background-color: transparent;
-    color: #717171;
     border: none;
     font-size: .9rem;
     font-weight: bold;
     margin-bottom: 1rem;
     width: 100%;
+}
+
+aside button span {
+    color: #717171;
 }
 
 aside button>div {
@@ -361,6 +364,14 @@ footer i {
     height: .2rem;
     background-color: #d2d2d2;
     border-radius: 15px;
+    position: relative;
+}
+
+.play-bar>div>div>i {
+    position: absolute;
+    top: -5px;
+    right: -9px;
+    opacity: 0;
 }
 
 .option li {
@@ -379,6 +390,85 @@ footer i {
     height: .2rem;
     background-color: #d2d2d2;
     border-radius: 15px;
+    position: relative;
+}
+
+.volume>div>div>i {
+    position: absolute;
+    top: -4px;
+    right: -9px;
+    opacity: 0;
+}
+
+/* Hover */
+
+main article figure {
+    position: relative;
+}
+
+main article i {
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+main article:hover i {
+    opacity: 1;
+    cursor: pointer;
+}
+
+main article:hover img {
+    filter: brightness(.5);
+    cursor: pointer;
+}
+
+.adv button:hover,
+.music-player li:nth-child(3) i:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+aside button:hover span,
+aside li:hover,
+main li:hover,
+.info p:hover,
+.on-play i:hover,
+footer li {
+    cursor: pointer;
+    color: white;
+}
+
+aside button:hover>div {
+    background-color: white;
+    cursor: pointer;
+}
+
+.on-play p:hover,
+.on-play h3:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.play-bar>div>div:hover {
+background-color: #a8f82e;
+cursor: pointer;
+}
+
+.play-bar>div>div:hover i {
+    opacity: 1;
+}
+
+.volume>div>div:hover {
+    background-color: #a8f82e;
+    cursor: pointer;
+}
+    
+.volume>div>div:hover i {
+    opacity: 1;
 }
 
 /* <!----------------> */
@@ -425,7 +515,7 @@ footer i {
     main article>p {
         font-size: .6rem;
     }
-    
+
     .margin-right {
         margin-right: 0;
     }
