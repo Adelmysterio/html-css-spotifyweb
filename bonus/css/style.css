@@ -26,18 +26,15 @@ header {
     border-radius: 15px;
 }
 
-aside.left{
+aside {
     width: 280px;
-    height: calc(100vh - 1rem - 120px - 112px);
     background-color: #121212;
     border-radius: 15px;
     overflow-y: scroll;
 }
-aside.right{
-    width: 280px;
-    background-color: #121212;
-    border-radius: 15px;
-    overflow-y: scroll;
+
+.col>aside {
+    height: calc(100vh - 1rem - 120px - 112px);
 }
 
 main {
@@ -48,6 +45,7 @@ main {
 }
 
 footer {
+
     width: 100%;
     height: 100px;
     background-color: greenyellow;
