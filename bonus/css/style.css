@@ -15,8 +15,8 @@ body {
 }
 
 .huge-container {
-margin: 1rem;
-margin-bottom: 0;
+    margin: 1rem;
+    margin-bottom: 0;
 }
 
 header {
@@ -30,7 +30,6 @@ aside {
     width: 280px;
     background-color: #121212;
     border-radius: 15px;
-    overflow-y: scroll;
 }
 
 .col>aside {
@@ -72,12 +71,16 @@ footer {
     align-items: center;
 }
 
-.align-center{
+.align-center {
     align-items: center
 }
 
 .gap {
     gap: 1rem;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 /* <///////////////////////> */
@@ -94,3 +97,36 @@ header ul {
 header li img {
     height: 1.7rem;
 }
+
+/* <///////////////////////> */
+/* Aside LEFT Style */
+
+.col>aside {
+    padding: 1rem;
+}
+
+.library-bar {
+    position: fixed;
+    left: 2rem;
+    right: calc(100% - 280px);
+}
+
+.library-bar>div {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.library-bar img {
+    height: 1.7rem;
+}
+
+.library-area {
+    padding-top: 5rem;
+}
+
+.library-area img{
+    height: 1.7rem;
+}
+
+
+
