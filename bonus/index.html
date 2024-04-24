@@ -206,9 +206,11 @@
 
         <main>
             <section class="bg-gradient flex column">
-                <section class="button-area">
-                    <button>Esplora Premium</button>
-                    <button>Installa app</button>
+                <section class="button-area flex gap">
+                    <button class="bg-white">Esplora Premium</button>
+                    <button class="bg-black"><i class="fa-regular fa-circle-down"></i> Installa app</button>
+                    <button class="bg-black"><i class="fa-solid fa-user"></i></button>
+                    <button class="bg-black"><i class="fa-solid fa-bell"></i></button>
                 </section>
                 <section class="album-play flex align-end gap">
                     <figure class="album-cover">
@@ -421,7 +423,39 @@
         </main>
 
         <aside class="no-show">
+            <div class="side-header">
+                <section class="flex align-center space-between">
+                    <h3>Bleed It Out</h3>
+                    <div>
+                        <button>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                        <button>
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+            <div class="side-container">
+                <article class="flex column gap">
+                    <figure>
+                        <img src="https://i.scdn.co/image/ab67616d00001e028145b51d1cdca483aff64358"
+                            alt="Minutes to Midnight">
+                    </figure>
+                    <section>
+                        <h5>Bleed It Out</h5>
+                        <p>Linkin Park</p>
+                        <i class="fa-solid fa-circle-check green"></i>
+                    </section>
+                    <section class="artist-info">
+                        <p>Informazioni sull'artista</p>
+                        <section>
+                            <h4>Linkin Park</h4>
+                        </section>
+                    </section>
+                </article>
 
+            </div>
         </aside>
 
     </div>

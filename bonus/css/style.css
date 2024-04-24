@@ -52,6 +52,16 @@
     color: #1ed760;
 }
 
+.bg-white {
+    background-color: white;
+    color: black;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
 /* <///////////////////////> */
 /* Stile Generale */
 
@@ -69,14 +79,14 @@ body {
 }
 
 header {
-    width: 280px;
+    width: 350px;
     height: 112px;
     background-color: #121212;
     border-radius: 15px;
 }
 
 aside {
-    width: 280px;
+    width: 330px;
     background-color: #121212;
     border-radius: 15px;
     overflow-y: scroll;
@@ -90,6 +100,7 @@ aside {
 }
 
 .col>aside {
+    width: 350px;
     height: calc(100vh - 1rem - 100px - 110px)
 }
 
@@ -136,9 +147,9 @@ header li img {
     position: fixed;
     border-radius: 20px 20px 0 0;
     padding: 1rem 1rem 0 1rem;
-    background-color:  #121212;
+    background-color: #121212;
     z-index: 1;
-    width: 280px;
+    width: 350px;
 }
 
 .library-bar>div {
@@ -151,7 +162,7 @@ header li img {
 }
 
 .library-area {
-    padding: 7rem 1rem 1rem 1rem;
+    margin: 7rem 1rem 1rem 1rem;
 }
 
 
@@ -160,7 +171,7 @@ header li img {
 }
 
 .library-res {
-padding: 0 1rem 1rem 1rem;
+    padding: 0 1rem 1rem 1rem;
 }
 
 .library-res figure {
@@ -321,8 +332,6 @@ table tr td:nth-child(3) {
     padding-right: 2rem;
 }
 
-
-
 table tr td:nth-child(3)::before {
     content: "\f058";
     font: var(--fa-font-solid);
@@ -344,6 +353,94 @@ table tr:nth-child(5) td:nth-child(1),
 table tr:nth-child(5) td:nth-child(2) h5 {
     color: #1ed760;
 }
+
+/* <///////////////////////> */
+/* Aside RIGHT Style */
+
+.side-header {
+    padding: 1rem;
+}
+
+.side-header section {
+    width: 100%;
+}
+
+.side-header section h3 {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.side-header button {
+    background-color: transparent;
+}
+
+.side-container {
+    margin: .5rem;
+}
+
+.side-container article {
+    padding: .5rem;
+    margin-bottom: .5rem;
+}
+
+.side-container article figure {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.side-container article section {
+    width: 100%;
+}
+
+.side-container article figure img {
+    width: 100%;
+}
+
+.side-container article section h5 {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.side-container article section p {
+    font-size: .8rem;
+}
+
+.side-container article section {
+    position: relative;
+}
+
+.side-container article section i {
+    position: absolute;
+    bottom: 33%;
+    left: 93%;
+}
+
+.artist-info {
+    width: 100%;
+    height: 400px;
+    background-image: url("https://i.scdn.co/image/ab6761670000ecd431e22cbfb2e06cfbf2e05063");
+    background-color: #242424;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+
+
+.artist-info p:first-child {
+    padding: 1rem;
+    color: white;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.266), rgba(255, 255, 255, 0));
+}
+
+.artist-info section{
+    padding-top: 9rem;
+    padding-left: 1rem;
+    color: white;
+}
+
 
 /* <///////////////////////> */
 /* Footer */
@@ -455,8 +552,6 @@ button {
     padding: .5rem .7rem;
 }
 
-
-
 /* <///////////////////////> */
 /* <///////////////////////> */
 /* <///////////////////////> */
@@ -494,7 +589,8 @@ button {
 
     aside,
     header,
-    .library-container {
+    .library-container,
+    .col>aside {
         width: 80px;
     }
 
@@ -508,5 +604,9 @@ button {
 
     .library-bar>div>div:last-child {
         padding-left: .2rem;
+    }
+
+    footer>nav {
+        width: 95%;
     }
 }
