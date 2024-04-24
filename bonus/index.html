@@ -28,27 +28,27 @@
                 <div class="flex align-center">
                     <ul class="flex column gap">
                         <li class="flex align-center gap">
-                            <img src="img/home.svg" alt="Home icon"> <span>Home</span>
+                            <img src="img/home.svg" alt="Home icon"> <span class="no-show">Home</span>
                         </li>
                         <li class="flex align-center gap">
-                            <img src="img/search.svg" alt="Home icon"> <span>Cerca</span>
+                            <img src="img/search.svg" alt="Home icon"> <span class="no-show">Cerca</span>
                         </li>
                     </ul>
                 </div>
             </header>
             <aside>
                 <section class="library-bar flex align-center wrap">
-                    <div class="flex align-center space-between">
+                    <div class="flex align-center space-between wrap gap">
                         <div class="flex align-center gap">
                             <img src="img/libreria.svg" alt="Library logo">
-                            <p>La tua Libreria</p>
+                            <p class="no-show">La tua Libreria</p>
                         </div>
                         <div class="flex gap">
                             <i class="fa-solid fa-plus"></i>
                             <i class="fa-solid fa-arrow-right"></i>
                         </div>
                     </div>
-                    <div class="button-area">
+                    <div class="button-area no-show">
                         <button>Playlist</button>
                         <button>Artisti</button>
                         <button>Album</button>
@@ -57,7 +57,7 @@
                 <section class="library-area flex align-center space-between">
                     <img src="img/search.svg" alt="Home icon">
                     <section class="flex gap">
-                        <p>
+                        <p class="no-show">
                             Recenti
                         </p>
                         <i class="fa-solid fa-list-ul"></i>
@@ -203,12 +203,12 @@
         </div>
 
         <main>
-            <section class="album-play flex column">
-                <section class="button-area">
-                    <button>Esplora Premium</button>
-                    <button>Installa app</button>
-                </section>
-                <section class="flex align-end gap">
+            <section class="bg-gradient flex column">
+            <section class="button-area">
+                <button>Esplora Premium</button>
+                <button>Installa app</button>
+            </section>
+                <section class="album-play flex align-end gap">
                     <figure class="album-cover">
                         <img src="https://i.scdn.co/image/ab67616d00001e028145b51d1cdca483aff64358"
                             alt="Minutes to Midnight">
@@ -250,6 +250,7 @@
                     <tr>
                         <th>#</th>
                         <th>Titolo</th>
+                        <th></th>
                         <th><i class="fa-solid fa-clock"></i></th>
                     </tr>
                     <tr>
@@ -258,6 +259,7 @@
                             <h5>Wake</h5>
                             <p>Linkin park</p>
                         </td>
+                        <td></td>
                         <td>
                             1:40
                         </td>
@@ -268,8 +270,11 @@
                             <h5>Given up</h5>
                             <p>Linkin park</p>
                         </td>
+                        <td></td>
                         <td>
-                            3:09
+                            <span>
+                                3:09
+                            </span>
                         </td>
                     </tr>
                     <tr>
@@ -278,6 +283,7 @@
                             <h5>Leave Out All The Rest</h5>
                             <p>Linkin park</p>
                         </td>
+                        <td></td>
                         <td>
                             3:29
                         </td>
@@ -288,6 +294,7 @@
                             <h5>Bleed it Out</h5>
                             <p>Linkin park</p>
                         </td>
+                        <td></td>
                         <td>
                             2:44
                         </td>
@@ -298,6 +305,7 @@
                             <h5>Shadow of the Day</h5>
                             <p>Linkin park</p>
                         </td>
+                        <td></td>
                         <td>
                             4:50
                         </td>
@@ -308,6 +316,7 @@
                             <h5>What I've Done</h5>
                             <p>Linkin park</p>
                         </td>
+                        <td></td>
                         <td>
                             3:25
                         </td>
@@ -318,6 +327,7 @@
                             <h5>Hands Held High</h5>
                             <p>Linkin park</p>
                         </td>
+                        <td></td>
                         <td>
                             3:53
                         </td>
@@ -328,6 +338,7 @@
                             <h5>No More Sorrow</h5>
                             <p>Linkin park</p>
                         </td>
+                        <td></td>
                         <td>
                             3:41
                         </td>
@@ -338,6 +349,7 @@
                             <h5>Valentin's Day</h5>
                             <p>Linkin park</p>
                         </td>
+                        <td></td>
                         <td>
                             3:16
                         </td>
@@ -348,6 +360,7 @@
                             <h5>In Between</h5>
                             <p>Linkin park</p>
                         </td>
+                        <td></td>
                         <td>
                             3:16
                         </td>
@@ -358,6 +371,7 @@
                             <h5>In Pieces</h5>
                             <p>Linkin park</p>
                         </td>
+                        <td></td>
                         <td>
                             3:38
                         </td>
@@ -368,6 +382,7 @@
                             <h5>The Little Things Give You Away</h5>
                             <p>Linkin park</p>
                         </td>
+                        <td></td>
                         <td>
                             6:23
                         </td>
@@ -378,6 +393,7 @@
                             <h5>Faint - Live from Third Encore Studio, North Hollywood, CA, 3/14/2007</h5>
                             <p>Linkin park</p>
                         </td>
+                        <td></td>
                         <td>
                             2:44
                         </td>
@@ -388,8 +404,9 @@
                             <h5>What I've Done - Live from Third Encore Studio, North Hollywood, CA, 3/14/2007</h5>
                             <p>Linkin park</p>
                         </td>
+                        <td></td>
                         <td>
-                            3:24
+                            <span>3:24</span>
                         </td>
                     </tr>
                 </table>
@@ -401,14 +418,15 @@
             </section>
         </main>
 
-        <aside>
+        <aside class="no-show">
 
         </aside>
 
     </div>
 
-    <footer class="flex align-center">
-        <nav class="flex space-between">
+    <footer class="flex centered">
+        <nav class="flex space-between align-center">
+
             <article class="flex align-center gap">
                 <figure>
                     <img src="https://i.scdn.co/image/ab67616d00001e028145b51d1cdca483aff64358"
@@ -419,7 +437,67 @@
                     <p>Linkin Park</p>
                 </section>
             </article>
+
+            <div class="player flex column">
+                <ul class="flex centered gap">
+                    <li>
+                        <i class="fa-solid fa-shuffle"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-backward-step"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-play-circle"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-forward-step"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </li>
+                </ul>
+
+                <div class="play-bar flex centered">
+                    <span>0:25</span>
+                    <div>
+                        <div>
+                        </div>
+                    </div>
+                    <span>2:44</span>
+                </div>
+
+                
+            </div>
+
+            <div class="option">
+                <ul class="flex centered gap jus-end wrap">
+                    <li>
+                        <i class="fa-solid fa-play"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-microphone"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-list"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-desktop"></i>
+                    </li>
+                    <li class="flex gap">
+                        <i class="fa-solid fa-volume-high"></i>
+                        <div class="volume flex centered">
+                            <div>
+                                <div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </nav>
+
+
     </footer>
 </body>
 
